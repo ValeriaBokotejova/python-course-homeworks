@@ -5,10 +5,5 @@ matrix = [
 ]
 
 for row in matrix:
-    row_values = []
-    row_sum = 0
-    for num in row:
-        row_values.append(num)
-        row_sum += num
-
-    print(f"Row: {row_values} Sum: {row_sum}")
+    row_sum = sum(row)
+    print(f"Row: {row}, Sum: {row_sum}")
