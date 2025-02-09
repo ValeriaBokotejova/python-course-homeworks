@@ -6,5 +6,5 @@ grades = {
     "Eve": 78
 }
 
-for student in grades:
-    print(f"{student}: {grades[student]}")
+for student, grade in grades.items():
+    print(f"{student}: {grade}")
