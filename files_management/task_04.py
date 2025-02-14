@@ -19,8 +19,7 @@ ages = []
 print("\nFile content:")
 with open(filename, "r", encoding="utf-8") as file:
     reader = csv.reader(file)
-    next(reader)
-    for row in reader:
+    for row in reader[1:]:
         name, age, grade = row
         age = int(age)
         ages.append(age)
